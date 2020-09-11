@@ -2,16 +2,15 @@ var action = document.querySelector("#action-key");
 
 action.addEventListener("click", function(e){
     e.preventDefault();
-        var randomNum = Math.floor(Math.random()*2);
-        alert(randomNum + " randnum");
         var getGuess = document.querySelector("#take-input").value;
-        console.log(getGuess + " current guess");
+        var randomNum = Math.floor(Math.random()*20)+1;
         var textGuess = document.querySelector("#txt-display");
         var chances = 4;
     
         while (chances > 0){
+        getGuess.innerHTML= "";
         var guess = getGuess;
-
+        
         if (chances == 0){
             textGuess.innerHTML = "";
             textGuess.innerHTML = "You lose"
