@@ -1,2 +1,2 @@
-# hello-world
-Learning how to work with github
+# GUESS GAME
+Creating a simple guess game
