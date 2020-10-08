@@ -1,21 +1,66 @@
 body{
-    margin-left: 350px;
-    margin-top: 150px;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 505px;
+    width: 1008px;
+    background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0, 0.5)),
+    url("ape.jpg");
+    text-align: center;  
+    border: 8px solid black;
 }
 
+@media only screen and (max-width: 600px) {
+    body{
+        width: 316px;
+        height: 579px;
+        background-color: blueviolet;
+    }
+  }
+
 .container-grid{
-    background-color: green;
-    text-align: center;  
-    width: 300px;
-    height: 150px;
-    border: 4px solid black;
+    margin-top: 100px;
 }
+
+@media only screen and (max-width: 600px) {
+    .container-grid{
+      margin-top: 170px;
+      background-color: lightblue;
+      height: 210px;
+    }
+  }
+
+#guess-text{
+    color: white;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}  
 
 #txt-display{
     color: black;
+    text-transform: uppercase;
+}
+
+#GUESSED-NUM{
+    text-transform: uppercase;
+}
+
+#chances{
+    color: black;
+    text-transform: uppercase;
 }
 
 #take-input{
     height: 30px;
-    border-radius: 10%;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    #take-input{
+        margin-bottom: 4px;
+        height: 15px;
+        border-radius: 10%;
+    }
+  }
